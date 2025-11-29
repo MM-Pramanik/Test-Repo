@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JavaScript Program</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button onclick="greet()">Click Me</button>
+    <p id="output"></p>
+
+    <script>
+      function greet() {
+        const name = prompt("What is your name?");
+        const message = `Hello, ${name}! Welcome to JavaScript.`;
+        document.getElementById("output").innerText = message;
+      }
+    </script>
+  </body>
+</html>
